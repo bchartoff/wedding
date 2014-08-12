@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
 
 	<title>skrollr-menu plugin</title>
 	<meta charset="utf-8">
@@ -71,6 +72,14 @@
 */	text-shadow: 2px 2px rgba(0,0,0,.9);
 }
 
+.header-text a{
+	color: white;
+}
+
+.header-text a:active{
+	color: white;
+}
+
 /*#test{
 	height:20px;
 }*/
@@ -101,7 +110,7 @@
 				data-500="font-size:1.3em;
 						left: 80.6%;
 						bottom: 1.7%">
-										details
+										<a href="#details" data-menu-top="500">details</a>
 				</div>
  				<div class = "header-text" id ="header-rsvp"
 				data-0="font-size:1.5em;
@@ -136,7 +145,7 @@
 		</div>
 		<!--the +/-80% translation can be adjusted to control the speed difference of the image-->
 
-	<div id="skrollr-body" style = "margin-top:600px">
+	<div id="skrollr-body" style = "margin-top:600px;margin-left:10%;margin-right:10%;">
 	<h1>HERE THERE BE CONTENT</h1>
 
 	<p>Sirloin venison bresaola andouille pastrami short ribs. Short loin cow capicola tail ham hock leberkas. Frankfurter meatloaf capicola, swine ball tip jerky pork loin pork belly cow ribeye brisket strip steak jowl beef ribs ham hock. Pastrami ham hock rump turkey, pork belly capicola jerky. Turkey chuck beef, bresaola filet mignon jerky tri-tip pastrami. Bacon capicola jowl fatback short ribs. Speck shankle bacon chuck.</p>
@@ -144,6 +153,19 @@
 		<p>Sirloin venison bresaola andouille pastrami short ribs. Short loin cow capicola tail ham hock leberkas. Frankfurter meatloaf capicola, swine ball tip jerky pork loin pork belly cow ribeye brisket strip steak jowl beef ribs ham hock. Pastrami ham hock rump turkey, pork belly capicola jerky. Turkey chuck beef, bresaola filet mignon jerky tri-tip pastrami. Bacon capicola jowl fatback short ribs. Speck shankle bacon chuck.</p>
 
 		<p>Pork loin tail pork belly shank ham. Kielbasa venison ham, short loin ham hock beef ribs tri-tip ball tip pork belly. Ribeye sirloin sausage tenderloin hamburger. Strip steak tongue turkey, andouille bacon beef ribs venison. T-bone ball tip bresaola fatback, ground round meatball chicken sausage tongue pork chop leberkas sirloin jerky shank bacon. Turducken sirloin cow shankle pig, leberkas venison boudin pastrami.</p>
+
+		<a name = "details"></a><p>Cow fatback short loin, hamburger speck jowl turducken capicola ham hock. Hamburger corned beef strip steak shank filet mignon, jerky capicola chicken jowl ribeye pork ham hock ground round bresaola. Jowl ribeye kielbasa drumstick pork belly leberkas. Spare ribs fatback shankle, hamburger meatloaf sausage pork loin andouille pork kielbasa. Pancetta shank tongue, leberkas turducken shoulder rump meatball pork belly pig hamburger brisket biltong. Tenderloin short ribs pig, rump tail chuck turducken.</p>
+
+		<p>Cow tri-tip pork loin salami corned beef. T-bone turkey ham frankfurter, brisket cow chicken bacon rump sirloin. Pancetta ribeye salami leberkas speck shank. Ribeye prosciutto swine venison speck beef.</p>
+
+
+			<p>Pork loin tail pork belly shank ham. Kielbasa venison ham, short loin ham hock beef ribs tri-tip ball tip pork belly. Ribeye sirloin sausage tenderloin hamburger. Strip steak tongue turkey, andouille bacon beef ribs venison. T-bone ball tip bresaola fatback, ground round meatball chicken sausage tongue pork chop leberkas sirloin jerky shank bacon. Turducken sirloin cow shankle pig, leberkas venison boudin pastrami.</p>
+
+		<p>Cow fatback short loin, hamburger speck jowl turducken capicola ham hock. Hamburger corned beef strip steak shank filet mignon, jerky capicola chicken jowl ribeye pork ham hock ground round bresaola. Jowl ribeye kielbasa drumstick pork belly leberkas. Spare ribs fatback shankle, hamburger meatloaf sausage pork loin andouille pork kielbasa. Pancetta shank tongue, leberkas turducken shoulder rump meatball pork belly pig hamburger brisket biltong. Tenderloin short ribs pig, rump tail chuck turducken.</p>
+
+		<p>Cow tri-tip pork loin salami corned beef. T-bone turkey ham frankfurter, brisket cow chicken bacon rump sirloin. Pancetta ribeye salami leberkas speck shank. Ribeye prosciutto swine venison speck beef.</p>
+
+			<p>Pork loin tail pork belly shank ham. Kielbasa venison ham, short loin ham hock beef ribs tri-tip ball tip pork belly. Ribeye sirloin sausage tenderloin hamburger. Strip steak tongue turkey, andouille bacon beef ribs venison. T-bone ball tip bresaola fatback, ground round meatball chicken sausage tongue pork chop leberkas sirloin jerky shank bacon. Turducken sirloin cow shankle pig, leberkas venison boudin pastrami.</p>
 
 		<p>Cow fatback short loin, hamburger speck jowl turducken capicola ham hock. Hamburger corned beef strip steak shank filet mignon, jerky capicola chicken jowl ribeye pork ham hock ground round bresaola. Jowl ribeye kielbasa drumstick pork belly leberkas. Spare ribs fatback shankle, hamburger meatloaf sausage pork loin andouille pork kielbasa. Pancetta shank tongue, leberkas turducken shoulder rump meatball pork belly pig hamburger brisket biltong. Tenderloin short ribs pig, rump tail chuck turducken.</p>
 
@@ -284,9 +306,9 @@ skrollr.menu.init(s, {
 
     //If you pass a handleLink function you'll disable `data-menu-top` and `data-menu-offset`.
     //You are in control where skrollr will scroll to. You get the clicked link as a parameter and are expected to return a number.
-    handleLink: function(link) {
-        return 400;//Hardcoding 400 doesn't make much sense.
-    }
+    // handleLink: function(link) {
+    //     return 400;//Hardcoding 400 doesn't make much sense.
+    // }
 	});
 	});
 
