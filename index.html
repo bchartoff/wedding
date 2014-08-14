@@ -5,20 +5,21 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-<link rel="icon" type="image/png" href="favicon.png" />
+	<link rel="icon" type="image/png" href="favicon.png" />
+	<link rel="stylesheet" type="text/css" href="css/parallax.css">
 	<title>Natalie & Ben's Wedding</title>
 	<meta charset="utf-8">
 	<link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600italic,600,700italic,700,800italic,800" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine" />
 	<link href="//fonts.googleapis.com/css?family=Open+Sans Condensed:300italic,300,700" rel="stylesheet" type="text/css">
 
 
 
 <style>
-.bg {
+.header-image {
   width: 100%;
   height: 100%;
   margin: auto;
-  background: url(top_image.jpg) no-repeat top center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -27,21 +28,13 @@
   position: fixed;
   top: 0;
   left:0;
+}
+#header-photo{
+  background: url(images/top_image2.jpg) no-repeat top center fixed;
   z-index: 2;
 }
-.test {
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  content: url(overlay.png) no-repeat top center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  left:0;
+#header-overlay{
+  content: url(images/overlay_blue.png) no-repeat top center fixed;
   z-index: 3;
 }
 
@@ -59,20 +52,40 @@
 	position: absolute;
 	z-index: 4;
 	color: white;
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Tangerine', sans-serif;
 	text-shadow: 2px 2px rgba(0,0,0,.9);
 
 }
-.header-text{
+.header-text
+{
 	position: absolute;
 	z-index: 4;
 	color: white;
 	font-family: 'Open Sans Condensed', sans-serif;
 /*	font-weight: bold;
 */	text-shadow: 2px 2px rgba(0,0,0,.9);
+	text-decoration: none;
+}
+
+
+
+
+.section-text{
+	top: 70px;
+	position: absolute;
+	z-index: 4;
+	color: white;
+	font-family: 'Tangerine', sans-serif;
+/*	font-weight: bold;
+*/	text-shadow: 2px 2px rgba(0,0,0,.9);
+	z-index: 1 !important;
+	text-align: center;
+	width:100%;
+	font-size: 10em;
 }
 
 .header-text a{
+	text-decoration: none;
 	color: white;
 }
 
@@ -81,19 +94,37 @@
 }
 
 .header-text a:hover{
-	color: #ffe503;
+	color: #FAE462;
 	text-decoration: none;
 }
 
 .header-nav{
 	float:left;
-	margin-right: 10px;
+	margin-right: 15px;
 	width:auto;
 }
 
 #nav-wrapper{
-	width: 170px;
+	width: 360px;
+	margin-right: -40px;
 	display: inline-block !important;
+}
+
+.header-icon{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#travel-icon{
+	top: 10%;
+}
+
+
+.shadow {
+/*    -webkit-filter: drop-shadow( 1px 1px 0px rgba(0,0,0,.9) );
+    filter: drop-shadow( 1px 1px 0px rgba(0,0,0,.9) );
+*/    shape-rendering: geometricPrecision;
 }
 /*#test{
 	height:20px;
@@ -103,84 +134,174 @@
 
 <body>
 
-		<div id = "test">
-
-		<div class="bg" data-0="background-postion;transform:translate3d(0px, 0%, 0px);" data-500="transform:translate3d(0px, -92%, 0px)">
-		<div class = "test" data-0="opacity:0" data-500="opacity:1">
-		</div>
+	<div class="header-image" id = "header-photo" data-0="background-postion;transform:translate3d(0px, 0%, 0px);" data-500="transform:translate3d(0px, -88%, 0px)">
+		<div class = "header-image" id = "header-overlay" data-0="opacity:0" data-500="opacity:1"></div>
 <!-- 		<div id="bgImage" data-0="top:0;" data--10p-top-top="top:-200px"><img id = "topImage" src="top_image.jpg">
- -->			<div class = "header-text" id ="header-names"
-				data-0="font-size:4em;
-						left: 1%;
-						bottom: 60.2%"
-				data-500="font-size:2em;
-						left: 1%;
-						bottom: 1%">
-										<a href="#details" data-menu-top="500">Natalie & Ben</a>
-				</div>
- 				<div class = "header-text" id ="nav-wrapper"
-				data-300="font-size:1.3em;
-						right: -170px;
-						bottom: 1.8%"
-				data-500="font-size:1.3em;
-						right: 1.6%;
-						bottom: 1.8%">
-					<div class = "header-nav" id = "header-details">
-						<a href="#details" data-menu-top="500">details</a>
-					</div>
-					<div class = "header-nav" id = "header-photos">
-						<a href="#photos" data-menu-top="500">photos</a>
-					</div>
-					<div class = "header-nav" id = "header-rsvp">
-						<a href="#rsvp" data-menu-top="500">rsvp</a>
-					</div>
-					<div class = "header-nav" id = "header-gifts">
-						<a href="#gifts" data-menu-top="500">gifts</a>
-					</div>
-				</div>
-
-
+-->			<div class = "header-text" id ="header-names"
+		data-0="font-size:5em;
+				left: 3%;
+				bottom: 60.2%"
+		data-500="font-size:3em;
+				left: .5%;
+				bottom: -.3%">
+			<a href="#details" data-menu-top="500">Natalie & Ben</a>
 		</div>
+		<div class = "header-text" id ="nav-wrapper"
+	data-300="font-size:1.8em;
+			right: -236px;
+			bottom: 2.8%"
+	data-500="font-size:1.8em;
+			right: 1.6%;
+			bottom: 2.8%">
+			<div class = "header-nav" id = "header-details">
+				<a href="#details" data-menu-top="500">details</a>
+			</div>
+			<div class = "header-nav" id = "header-travel">
+				<a href="#photos" data-menu-top="500">travel</a>
+			</div>
+			<div class = "header-nav" id = "header-registry">
+				<a href="#rsvp" data-menu-top="500">registry</a>
+			</div>
+			<div class = "header-nav" id = "header-photos">
+				<a href="#gifts" data-menu-top="500">photos</a>
+			</div>
+			<div class = "header-nav" id = "header-rsvp">
+				<a href="#gifts" data-menu-top="500">rsvp</a>
+			</div>
 		</div>
+	</div>
 		<!--the +/-80% translation can be adjusted to control the speed difference of the image-->
 
-	<div id="skrollr-body" style = "margin-top:600px;margin-left:10%;margin-right:10%;">
-	<h1>HERE THERE BE CONTENT</h1>
-
-	<p>Sirloin venison bresaola andouille pastrami short ribs. Short loin cow capicola tail ham hock leberkas. Frankfurter meatloaf capicola, swine ball tip jerky pork loin pork belly cow ribeye brisket strip steak jowl beef ribs ham hock. Pastrami ham hock rump turkey, pork belly capicola jerky. Turkey chuck beef, bresaola filet mignon jerky tri-tip pastrami. Bacon capicola jowl fatback short ribs. Speck shankle bacon chuck.</p>
-
-		<p>Sirloin venison bresaola andouille pastrami short ribs. Short loin cow capicola tail ham hock leberkas. Frankfurter meatloaf capicola, swine ball tip jerky pork loin pork belly cow ribeye brisket strip steak jowl beef ribs ham hock. Pastrami ham hock rump turkey, pork belly capicola jerky. Turkey chuck beef, bresaola filet mignon jerky tri-tip pastrami. Bacon capicola jowl fatback short ribs. Speck shankle bacon chuck.</p>
-
-		<p>Pork loin tail pork belly shank ham. Kielbasa venison ham, short loin ham hock beef ribs tri-tip ball tip pork belly. Ribeye sirloin sausage tenderloin hamburger. Strip steak tongue turkey, andouille bacon beef ribs venison. T-bone ball tip bresaola fatback, ground round meatball chicken sausage tongue pork chop leberkas sirloin jerky shank bacon. Turducken sirloin cow shankle pig, leberkas venison boudin pastrami.</p>
-
-		<a name = "details"></a><p>Cow fatback short loin, hamburger speck jowl turducken capicola ham hock. Hamburger corned beef strip steak shank filet mignon, jerky capicola chicken jowl ribeye pork ham hock ground round bresaola. Jowl ribeye kielbasa drumstick pork belly leberkas. Spare ribs fatback shankle, hamburger meatloaf sausage pork loin andouille pork kielbasa. Pancetta shank tongue, leberkas turducken shoulder rump meatball pork belly pig hamburger brisket biltong. Tenderloin short ribs pig, rump tail chuck turducken.</p>
-
-		<p>Cow tri-tip pork loin salami corned beef. T-bone turkey ham frankfurter, brisket cow chicken bacon rump sirloin. Pancetta ribeye salami leberkas speck shank. Ribeye prosciutto swine venison speck beef.</p>
-
-<iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/almchartoff.j778b7ge/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiYWxtY2hhcnRvZmYiLCJhIjoidFFBSW51NCJ9.byPI1dunGhmKCoGPXELDmg'></iframe>
-
-			<p>Pork loin tail pork belly shank ham. Kielbasa venison ham, short loin ham hock beef ribs tri-tip ball tip pork belly. Ribeye sirloin sausage tenderloin hamburger. Strip steak tongue turkey, andouille bacon beef ribs venison. T-bone ball tip bresaola fatback, ground round meatball chicken sausage tongue pork chop leberkas sirloin jerky shank bacon. Turducken sirloin cow shankle pig, leberkas venison boudin pastrami.</p>
-
-		<p>Cow fatback short loin, hamburger speck jowl turducken capicola ham hock. Hamburger corned beef strip steak shank filet mignon, jerky capicola chicken jowl ribeye pork ham hock ground round bresaola. Jowl ribeye kielbasa drumstick pork belly leberkas. Spare ribs fatback shankle, hamburger meatloaf sausage pork loin andouille pork kielbasa. Pancetta shank tongue, leberkas turducken shoulder rump meatball pork belly pig hamburger brisket biltong. Tenderloin short ribs pig, rump tail chuck turducken.</p>
-
-		<p>Cow tri-tip pork loin salami corned beef. T-bone turkey ham frankfurter, brisket cow chicken bacon rump sirloin. Pancetta ribeye salami leberkas speck shank. Ribeye prosciutto swine venison speck beef.</p>
-
-			<p>Pork loin tail pork belly shank ham. Kielbasa venison ham, short loin ham hock beef ribs tri-tip ball tip pork belly. Ribeye sirloin sausage tenderloin hamburger. Strip steak tongue turkey, andouille bacon beef ribs venison. T-bone ball tip bresaola fatback, ground round meatball chicken sausage tongue pork chop leberkas sirloin jerky shank bacon. Turducken sirloin cow shankle pig, leberkas venison boudin pastrami.</p>
-
-		<p>Cow fatback short loin, hamburger speck jowl turducken capicola ham hock. Hamburger corned beef strip steak shank filet mignon, jerky capicola chicken jowl ribeye pork ham hock ground round bresaola. Jowl ribeye kielbasa drumstick pork belly leberkas. Spare ribs fatback shankle, hamburger meatloaf sausage pork loin andouille pork kielbasa. Pancetta shank tongue, leberkas turducken shoulder rump meatball pork belly pig hamburger brisket biltong. Tenderloin short ribs pig, rump tail chuck turducken.</p>
-
-		<p>Cow tri-tip pork loin salami corned beef. T-bone turkey ham frankfurter, brisket cow chicken bacon rump sirloin. Pancetta ribeye salami leberkas speck shank. Ribeye prosciutto swine venison speck beef.</p>
 
 
+
+
+
+
+
+
+	<div
+		class="parallax-image-wrapper parallax-image-wrapper-40"
+		data-anchor-target="#dragons + .gap"
+		data-bottom-top="transform:translate3d(0px, 350%, 0px)"
+		data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+
+		<div
+			class="parallax-image parallax-image-40"
+			style="background-image:url(images/section_2_copy.jpg)"
+			data-anchor-target="#dragons + .gap"
+			data-bottom-top="transform: translate3d(0px, -60%, 0px);"
+			data-top-bottom="transform: translate3d(0px, 60%, 0px);"
+		>
+		</div>
 	</div>
 
-	<script type="text/javascript" src="skrollr.min.js"></script>
+<!-- 
+	<div
+		class="parallax-image-wrapper parallax-image-wrapper-40"
+		data-anchor-target="#bacons + .gap"
+		data-bottom-top="transform:translate3d(0px, 350%, 0px)"
+		data-top-bottom="transform:translate3d(0px, 0%, 0px)">
 
-	<script type="text/javascript" src="skrollr.menu.min.js"></script>
+		<div
+			class="parallax-image parallax-image-40"
+			style="background-image:url(images/section_2_copy.jpg)"
+			data-anchor-target="#bacons + .gap"
+			data-bottom-top="transform: translate3d(0px, -60%, 0px);"
+			data-top-bottom="transform: translate3d(0px, 60%, 0px);"
+		></div>
+	</div>
+
+	<div
+		class="parallax-image-wrapper parallax-image-wrapper-40"
+		data-anchor-target="#kittens + .gap"
+		data-bottom-top="transform:translate3d(0px, 350%, 0px)"
+		data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+		<div
+			class="parallax-image parallax-image-40"
+			style="background-image:url(images/top_image2.jpg)"
+			data-anchor-target="#kittens + .gap"
+			data-bottom-top="transform: translate3d(0px, -60%, 0px);"
+			data-top-bottom="transform: translate3d(0px, 60%, 0px);"
+		></div>
+	</div>
+
+ -->
+
+
+
+
+
+	<div id="skrollr-body" style = "margin-top:600px;margin-left:10%;margin-right:10%;">
+		<div class="header" id="dragons">
+			Skrollr demo of classic parallax sections. Degrades without JavaScript (could be disabled on mobile without breaking everything).
+		</div>
+		<div class="gap gap-40" style="background-image:url(images/section_2_copy.jpg);">
+			<div class = "section-text">
+				Travel
+			<!-- <div id = "travel-icon">
+			<img class = "header-icon shadow" src = "images/plane_circle.svg"/>
+			</div> -->
+			</div>
+
+		</div>
+		<div class="content" id="bacons">
+			<p><br><br><br>
+				<div id = "travel-icon" style="position:relative">
+		<img class = "header-icon shadow" src = "images/plane_circle.svg"/>
+	</div>
+
+			Landjaeger chicken ham fatback sausage hamburger, tri-tip capicola pastrami pancetta ribeye turducken. Rump shank turkey pig kevin sausage meatloaf tenderloin drumstick short ribs short loin. Prosciutto spare ribs chuck, pork strip steak pork chop swine bacon turkey shoulder andouille. Jowl landjaeger chicken corned beef. Ham hock kielbasa pancetta ground round sausage. Spare ribs porchetta pastrami filet mignon drumstick ball tip. Beef ribs prosciutto kevin, landjaeger shoulder ham hock ham brisket sirloin chuck t-bone drumstick kielbasa pork chop.</p>
+
+			<p>Landjaeger spare ribs chicken ball tip, filet mignon frankfurter ribeye tenderloin corned beef. Strip steak boudin pork loin, chicken turkey ball tip beef ribs ground round shank ham hock. Kevin capicola beef, chuck pork chop shoulder brisket doner meatloaf shank ham hock tenderloin. Chuck ham hock short ribs ground round sausage prosciutto shoulder bacon andouille tri-tip beef biltong filet mignon chicken. Pork belly andouille shank, bacon sausage meatloaf bresaola pork chop short ribs t-bone. Ham hock salami porchetta bacon beef turkey, strip steak kielbasa pancetta brisket meatball t-bone.</p>
+
+			<p>Chicken pancetta capicola chuck, turkey meatball jerky frankfurter kielbasa ball tip bacon ground round. Beef ribs brisket meatloaf short ribs landjaeger shankle spare ribs sausage, pancetta swine sirloin flank. Tail shank chuck pancetta, ham meatloaf short ribs sausage rump turkey kevin pork chop landjaeger. Doner boudin short ribs t-bone, jerky shankle bresaola drumstick. Strip steak shank spare ribs boudin doner short ribs. Boudin prosciutto jowl tenderloin tongue beef ribs, short ribs salami short loin strip steak ham jerky. Shank pancetta beef ribs, corned beef ham hock pork belly drumstick tail bresaola chuck.</p>
+		</div>
+		<div class="gap gap-40" style="background-image:url(images/section_2_copy.jpg);"></div>
+		<div class="content content-full" id="kittens">
+			Here be kittens
+		</div>
+		<div class="gap gap-40" style="background-image:url(images/top_image2.jpg);"></div>
+		<div class="content" id="done">
+			Images from <a href="http://placekitten.com/attribution.html">http://placekitten.com/</a>, thanks!
+		</div>
+
+
+		Airplane designed by <a href="http://www.thenounproject.com/sesisesi">Ema Dimitrova</a> from the <a href="http://www.thenounproject.com">Noun Project</a>
+
+		Travel designed by <a href="http://www.thenounproject.com/tomwalshdesign">Tom Walsh</a> from the <a href="http://www.thenounproject.com">Noun Project</a>
+
+<!-- 
+<iframe width='40%' height='250px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/almchartoff.j778b7ge/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiYWxtY2hhcnRvZmYiLCJhIjoidFFBSW51NCJ9.byPI1dunGhmKCoGPXELDmg'></iframe>
+
+			<p>Pork loin tail pork belly shank ham. Kielbasa venison ham, short loin ham hock beef ribs tri-tip ball tip pork belly. Ribeye sirloin sausage tenderloin hamburger. Strip steak tongue turkey, andouille bacon beef ribs venison. T-bone ball tip bresaola fatback, ground round meatball chicken sausage tongue pork chop leberkas sirloin jerky shank bacon. Turducken sirloin cow shankle pig, leberkas venison boudin pastrami.</p>
+
+		<p>Cow fatback short loin, hamburger speck jowl turducken capicola ham hock. Hamburger corned beef strip steak shank filet mignon, jerky capicola chicken jowl ribeye pork ham hock ground round bresaola. Jowl ribeye kielbasa drumstick pork belly leberkas. Spare ribs fatback shankle, hamburger meatloaf sausage pork loin andouille pork kielbasa. Pancetta shank tongue, leberkas turducken shoulder rump meatball pork belly pig hamburger brisket biltong. Tenderloin short ribs pig, rump tail chuck turducken.</p>
+
+		<p>Cow tri-tip pork loin salami corned beef. T-bone turkey ham frankfurter, brisket cow chicken bacon rump sirloin. Pancetta ribeye salami leberkas speck shank. Ribeye prosciutto swine venison speck beef.</p>
+
+			<p>Pork loin tail pork belly shank ham. Kielbasa venison ham, short loin ham hock beef ribs tri-tip ball tip pork belly. Ribeye sirloin sausage tenderloin hamburger. Strip steak tongue turkey, andouille bacon beef ribs venison. T-bone ball tip bresaola fatback, ground round meatball chicken sausage tongue pork chop leberkas sirloin jerky shank bacon. Turducken sirloin cow shankle pig, leberkas venison boudin pastrami.</p>
+
+		<p>Cow fatback short loin, hamburger speck jowl turducken capicola ham hock. Hamburger corned beef strip steak shank filet mignon, jerky capicola chicken jowl ribeye pork ham hock ground round bresaola. Jowl ribeye kielbasa drumstick pork belly leberkas. Spare ribs fatback shankle, hamburger meatloaf sausage pork loin andouille pork kielbasa. Pancetta shank tongue, leberkas turducken shoulder rump meatball pork belly pig hamburger brisket biltong. Tenderloin short ribs pig, rump tail chuck turducken.</p>
+
+		<p>Cow tri-tip pork loin salami corned beef. T-bone turkey ham frankfurter, brisket cow chicken bacon rump sirloin. Pancetta ribeye salami leberkas speck shank. Ribeye prosciutto swine venison speck beef.</p>
+
+ -->
+	</div>
+
+	<script type="text/javascript" src="javascript/skrollr.min.js"></script>
+
+	<script type="text/javascript" src="javascript/skrollr.menu.min.js"></script>
 
 	<script type="text/javascript">
 	setTimeout(function() {
-		var s = skrollr.init(/*other stuff*/);
+		var s = skrollr.init({
+			smoothScrolling: false,
+			mobileDeceleration: 0.004,
+			edgeStrategy: 'ease'
+			});
 
 //The options (second parameter) are all optional. The values shown are the default values.
 skrollr.menu.init(s, {
@@ -188,7 +309,7 @@ skrollr.menu.init(s, {
     animate: true,
 
     //The easing function to use.
-    easing: 'linear',
+    // easing: 'linear',
 
     //Multiply your data-[offset] values so they match those set in skrollr.init
     //scale: 2,
