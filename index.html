@@ -7,6 +7,7 @@
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="icon" type="image/png" href="favicon.png" />
 	<link rel="stylesheet" type="text/css" href="css/parallax.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 	<title>Natalie & Ben's Wedding</title>
 	<meta charset="utf-8">
 	<link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600italic,600,700italic,700,800italic,800" rel="stylesheet" type="text/css">
@@ -52,9 +53,13 @@
 	position: absolute;
 	z-index: 4;
 	color: white;
-	font-family: 'Tangerine', sans-serif;
+	/*font-family: 'Tangerine', sans-serif;*/
 	text-shadow: 2px 2px rgba(0,0,0,.9);
 
+}
+
+#header-names a{
+	padding-top: 20px;
 }
 .header-text
 {
@@ -62,8 +67,8 @@
 	z-index: 4;
 	color: white;
 	font-family: 'Open Sans Condensed', sans-serif;
-/*	font-weight: bold;
-*/	text-shadow: 2px 2px rgba(0,0,0,.9);
+	/*font-weight: 6;*/
+	text-shadow: 2px 2px rgba(0,0,0,.9);
 	text-decoration: none;
 }
 
@@ -75,13 +80,13 @@
 	position: absolute;
 	z-index: 4;
 	color: white;
-	font-family: 'Tangerine', sans-serif;
+	/*font-family: 'Tangerine', sans-serif;*/
 /*	font-weight: bold;
 */	text-shadow: 2px 2px rgba(0,0,0,.9);
 	z-index: 1 !important;
 	text-align: center;
 	width:100%;
-	font-size: 10em;
+	font-size: 12em;
 }
 
 .header-text a{
@@ -105,8 +110,8 @@
 }
 
 #nav-wrapper{
-	width: 360px;
-	margin-right: -40px;
+	width: 420px;
+	/*margin-right: -40px;*/
 	display: inline-block !important;
 }
 
@@ -126,6 +131,10 @@
     filter: drop-shadow( 1px 1px 0px rgba(0,0,0,.9) );
 */    shape-rendering: geometricPrecision;
 }
+
+p {
+	font-family: 'Open Sans';
+}
 /*#test{
 	height:20px;
 }*/
@@ -138,7 +147,7 @@
 		<div class = "header-image" id = "header-overlay" data-0="opacity:0" data-500="opacity:1"></div>
 <!-- 		<div id="bgImage" data-0="top:0;" data--10p-top-top="top:-200px"><img id = "topImage" src="top_image.jpg">
 -->			<div class = "header-text" id ="header-names"
-		data-0="font-size:5em;
+		data-0="font-size:7em;
 				left: 3%;
 				bottom: 60.2%"
 		data-500="font-size:3em;
@@ -147,26 +156,26 @@
 			<a href="#details" data-menu-top="500">Natalie & Ben</a>
 		</div>
 		<div class = "header-text" id ="nav-wrapper"
-	data-300="font-size:1.8em;
-			right: -236px;
+	data-300="font-size:1.5em;
+			right: -200%;
 			bottom: 2.8%"
-	data-500="font-size:1.8em;
-			right: 1.6%;
+	data-500="font-size:1.5em;
+			right: -6.6%;
 			bottom: 2.8%">
 			<div class = "header-nav" id = "header-details">
-				<a href="#details" data-menu-top="500">details</a>
+				<a href="#details" data-menu-top="500">DETAILS</a>
 			</div>
 			<div class = "header-nav" id = "header-travel">
-				<a href="#photos" data-menu-top="500">travel</a>
+				<a href="#photos" data-menu-top="500">TRAVEL</a>
 			</div>
 			<div class = "header-nav" id = "header-registry">
-				<a href="#rsvp" data-menu-top="500">registry</a>
+				<a href="#rsvp" data-menu-top="500">REGISTRY</a>
 			</div>
 			<div class = "header-nav" id = "header-photos">
-				<a href="#gifts" data-menu-top="500">photos</a>
+				<a href="#gifts" data-menu-top="500">PHOTOS</a>
 			</div>
 			<div class = "header-nav" id = "header-rsvp">
-				<a href="#gifts" data-menu-top="500">rsvp</a>
+				<a href="#gifts" data-menu-top="500">RSVP</a>
 			</div>
 		</div>
 	</div>
@@ -234,13 +243,12 @@
 
 
 
-	<div id="skrollr-body" style = "margin-top:600px;margin-left:10%;margin-right:10%;">
+	<div id="skrollr-body" style = "margin-top:540px;margin-left:10%;margin-right:10%;">
 		<div class="header" id="dragons">
-			Skrollr demo of classic parallax sections. Degrades without JavaScript (could be disabled on mobile without breaking everything).
 		</div>
 		<div class="gap gap-40" style="background-image:url(images/section_2_copy.jpg);">
 			<div class = "section-text">
-				Travel
+				Details
 			<!-- <div id = "travel-icon">
 			<img class = "header-icon shadow" src = "images/plane_circle.svg"/>
 			</div> -->
@@ -248,11 +256,10 @@
 
 		</div>
 		<div class="content" id="bacons">
-			<p><br><br><br>
 				<div id = "travel-icon" style="position:relative">
 		<img class = "header-icon shadow" src = "images/plane_circle.svg"/>
 	</div>
-
+			<p>
 			Landjaeger chicken ham fatback sausage hamburger, tri-tip capicola pastrami pancetta ribeye turducken. Rump shank turkey pig kevin sausage meatloaf tenderloin drumstick short ribs short loin. Prosciutto spare ribs chuck, pork strip steak pork chop swine bacon turkey shoulder andouille. Jowl landjaeger chicken corned beef. Ham hock kielbasa pancetta ground round sausage. Spare ribs porchetta pastrami filet mignon drumstick ball tip. Beef ribs prosciutto kevin, landjaeger shoulder ham hock ham brisket sirloin chuck t-bone drumstick kielbasa pork chop.</p>
 
 			<p>Landjaeger spare ribs chicken ball tip, filet mignon frankfurter ribeye tenderloin corned beef. Strip steak boudin pork loin, chicken turkey ball tip beef ribs ground round shank ham hock. Kevin capicola beef, chuck pork chop shoulder brisket doner meatloaf shank ham hock tenderloin. Chuck ham hock short ribs ground round sausage prosciutto shoulder bacon andouille tri-tip beef biltong filet mignon chicken. Pork belly andouille shank, bacon sausage meatloaf bresaola pork chop short ribs t-bone. Ham hock salami porchetta bacon beef turkey, strip steak kielbasa pancetta brisket meatball t-bone.</p>
