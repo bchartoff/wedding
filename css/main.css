@@ -1,0 +1,14 @@
+.content-icon, .content-text{
+	float: none !important;
+	display: inline-block !important;
+	vertical-align: middle !important;
+}
+
+.content-row {
+	display: inline !important;
+}
+
+.sources{
+	font-family: Open Sans;
+	font-size: .7em;
+}
