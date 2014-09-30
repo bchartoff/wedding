@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+	<link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -132,6 +136,9 @@
 
 
 #lodging_map{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
 	margin-top: 30px;
 }
 
@@ -141,6 +148,13 @@
 p {
 	font-family: 'Open Sans';
 }
+
+#links{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 870px;
+}
 /*#test{
 	height:20px;
 }*/
@@ -148,7 +162,6 @@ p {
 </head>
 
 <body>
-
 	<div class="header-image" id = "header-photo" data-0="background-postion;transform:translate3d(0px, 0%, 0px);" data-500="transform:translate3d(0px, -88%, 0px)">
 		<div class = "header-image" id = "header-overlay" data-0="opacity:0" data-500="opacity:1"></div>
 <!-- 		<div id="bgImage" data-0="top:0;" data--10p-top-top="top:-200px"><img id = "topImage" src="top_image.jpg">
@@ -172,27 +185,20 @@ p {
 				<a href="#details" data-menu-top="500">DETAILS</a>
 			</div>
 			<div class = "header-nav" id = "header-travel">
-				<a href="#travel" data-menu-top="1200">TRAVEL</a>
+				<a href="#travel" data-menu-top="1220">TRAVEL</a>
 			</div>
 			<div class = "header-nav" id = "header-registry">
-				<a href="#registry" data-menu-top="500">REGISTRY</a>
+				<a href="#registry" data-menu-top="2300">REGISTRY</a>
 			</div>
 			<div class = "header-nav" id = "header-photos">
-				<a href="#photos" data-menu-top="500">PHOTOS</a>
+				<a href="#photos" data-menu-top="2780">PHOTOS</a>
 			</div>
 			<div class = "header-nav" id = "header-rsvp">
-				<a href="#rsvp" data-menu-top="500">RSVP</a>
+				<a href="#rsvp" data-menu-top="3870">RSVP</a>
 			</div>
 		</div>
 	</div>
 		<!--the +/-80% translation can be adjusted to control the speed difference of the image-->
-
-
-
-
-
-
-
 
 
 	<div
@@ -236,12 +242,58 @@ p {
 
 		<div
 			class="parallax-image parallax-image-40"
-			style="background-image:url(images/top_image2.jpg)"
+			style="background-image:url(images/section_3.jpg)"
 			data-anchor-target="#kittens + .gap"
 			data-bottom-top="transform: translate3d(0px, -60%, 0px);"
 			data-top-bottom="transform: translate3d(0px, 60%, 0px);"
 		></div>
 	</div>
+
+		<div
+		class="parallax-image-wrapper parallax-image-wrapper-40"
+		data-anchor-target="#stuff + .gap"
+		data-bottom-top="transform:translate3d(0px, 350%, 0px)"
+		data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+		<div
+			class="parallax-image parallax-image-40"
+			style="background-image:url(images/section_4.jpg)"
+			data-anchor-target="#stuff + .gap"
+			data-bottom-top="transform: translate3d(0px, -60%, 0px);"
+			data-top-bottom="transform: translate3d(0px, 60%, 0px);"
+		></div>
+	</div>
+
+	<div
+		class="parallax-image-wrapper parallax-image-wrapper-40"
+		data-anchor-target="#photos_img + .gap"
+		data-bottom-top="transform:translate3d(0px, 350%, 0px)"
+		data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+		<div
+			class="parallax-image parallax-image-40"
+			style="background-image:url(images/section_5.jpg)"
+			data-anchor-target="#photos_img + .gap"
+			data-bottom-top="transform: translate3d(0px, -60%, 0px);"
+			data-top-bottom="transform: translate3d(0px, 60%, 0px);"
+		></div>
+	</div>
+
+<!-- 	<div
+		class="parallax-image-wrapper parallax-image-wrapper-40"
+		data-anchor-target="#rsvp_img + .gap"
+		data-bottom-top="transform:translate3d(0px, 350%, 0px)"
+		data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+		<div
+			class="parallax-image parallax-image-40"
+			style="background-image:url(images/section_3.jpg)"
+			data-anchor-target="#rsvp_img + .gap"
+			data-bottom-top="transform: translate3d(0px, -60%, 0px);"
+			data-top-bottom="transform: translate3d(0px, 60%, 0px);"
+		></div>
+	</div>
+ -->
 
 
 
@@ -418,7 +470,244 @@ p {
 		
 		
 
-		<div class="gap gap-40" style="background-image:url(images/section2.jpg);background-attachment:fixed;"></div>
+		<div class="gap gap-40" style="background-image:url(images/section_3.jpg);background-attachment:fixed;">
+
+			<div class = "section-text">
+				Registry
+			</div>
+		</div>
+		<div class="content" id="stuff">
+
+<!-- gift icon -->
+			<div class="content-row row">
+				<div class="content-icon col-md-2">
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<path fill="#14365C" d="M50,4.6c-24.8,0-45,20.2-45,45s20.2,45,45,45c24.798,0,45-20.199,45-45C95,24.799,74.799,4.6,50,4.6z"/>
+<rect fill="none" width="100" height="100"/>
+<g id="Your_Icon">
+	<path class = "icon-fill" data-10p-top-top="fill:rgb(255,255,255);" data-30p-top-top="fill:rgb(250,228,98);" data-50p-top-top="fill:rgb(255,255,255);" d="M68.883,31.297c0.827-1.995,1.572-6.012-2.906-10.491c-2.355-2.355-4.839-3.55-7.406-3.55
+		c-2.814,0-5.298,1.452-7.25,3.975l-1.121-0.648c-0.324-0.188-0.85-0.188-1.174,0l-1.121,0.648
+		c-1.952-2.522-4.441-3.975-7.254-3.975c-2.567,0-5.062,1.194-7.419,3.55c-4.478,4.479-3.76,8.496-2.933,10.491
+		c0.012,0.027,0.129,0.052,0.141,0.078l-7.401,4.299c-0.323,0.189-0.636,0.646-0.636,1.02v28.332c0,0.374,0.313,0.831,0.637,1.019
+		l25.968,15.091c0.323,0.188,0.861,0.188,1.183,0L76.19,66.045c0.324-0.188,0.644-0.645,0.644-1.019v-29.01l-7.987-4.641
+		C68.857,31.349,68.873,31.324,68.883,31.297z M49.617,49.44l-7.897-4.559l7.897-4.56l7.898,4.56L49.617,49.44z M52.707,32.276
+		c0.291-1.83,0.73-3.452,1.279-4.812l3.529,2.036L52.707,32.276z M46.526,32.275L41.72,29.5l3.527-2.037
+		C45.795,28.824,46.237,30.446,46.526,32.275z M41.196,38.922l-4.899,2.828l-7.898-4.561l4.329-2.5
+		C34.747,36.581,37.666,38.037,41.196,38.922z M47.626,52.962v22.645l-7.965-4.56V48.403L47.626,52.962z M51.608,52.964l7.966-4.561
+		v22.645l-7.966,4.559V52.964z M62.938,41.751l-4.901-2.829c3.531-0.885,6.45-2.341,8.469-4.232l4.331,2.5L62.938,41.751z
+		 M58.583,22.68c1.063,0,2.301,0.678,3.583,1.961c1.453,1.453,2.091,2.78,1.921,3.957l-8.005-4.621
+		C56.881,23.134,57.741,22.68,58.583,22.68z M37.067,24.641c1.284-1.284,2.523-1.962,3.584-1.962c0.843,0,1.701,0.455,2.501,1.297
+		l-8.006,4.622C34.977,27.421,35.614,26.094,37.067,24.641z M26.384,40.713l7.966,4.56v22.644l-7.966-4.562V40.713z M64.886,67.917
+		V45.273l7.965-4.561v22.643L64.886,67.917z"/>
+</g>
+</svg>
+				</div>
+				<div class="content-text col-md-10">
+				<strong>Gifts:</strong> We are in the process of creating a wedding registry. We will also be happy to accept any and all gifts from <a href = "http://www.skymall.com/">this vendor</a>
+				</div>
+			</div>
+
+
+				
+
+
+		</div>
+
+
+
+
+		<div class="gap gap-40" style="background-image:url(images/section_4.jpg);background-attachment:fixed;">
+
+			<div class = "section-text">
+				Photos
+			</div>
+		</div>
+		<div class="content" id="photos_img">
+
+			<div class="content-row row">
+		<div id="links">
+    	<a href="gallery/gall1.jpg" data-gallery>
+        	<img src="gallery/gall1.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall2.jpg" data-gallery>
+        	<img src="gallery/gall2.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall3.jpg" data-gallery>
+        	<img src="gallery/gall3.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall4.jpg" data-gallery>
+        	<img src="gallery/gall4.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall5.jpg" data-gallery>
+        	<img src="gallery/gall5.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall6.jpg" data-gallery>
+        	<img src="gallery/gall6.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall7.jpg" data-gallery>
+        	<img src="gallery/gall7.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall8.jpg" data-gallery>
+        	<img src="gallery/gall8.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall9.jpg" data-gallery>
+        	<img src="gallery/gall9.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall10.jpg" data-gallery>
+        	<img src="gallery/gall10.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall11.jpg" data-gallery>
+        	<img src="gallery/gall11.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall12.jpg" data-gallery>
+        	<img src="gallery/gall12.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall13.jpg" data-gallery>
+        	<img src="gallery/gall13.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall14.jpg" data-gallery>
+        	<img src="gallery/gall14.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall15.jpg" data-gallery>
+        	<img src="gallery/gall15.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall16.jpg" data-gallery>
+        	<img src="gallery/gall16.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall17.jpg" data-gallery>
+        	<img src="gallery/gall17.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall18.jpg" data-gallery>
+        	<img src="gallery/gall18.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall19.jpg" data-gallery>
+        	<img src="gallery/gall19.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall20.jpg" data-gallery>
+        	<img src="gallery/gall20.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall21.jpg" data-gallery>
+        	<img src="gallery/gall21.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall22.jpg" data-gallery>
+        	<img src="gallery/gall22.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall23.jpg" data-gallery>
+        	<img src="gallery/gall23.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall24.jpg" data-gallery>
+        	<img src="gallery/gall24.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall25.jpg" data-gallery>
+        	<img src="gallery/gall25.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall26.jpg" data-gallery>
+        	<img src="gallery/gall26.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall27.jpg" data-gallery>
+        	<img src="gallery/gall27.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall28.jpg" data-gallery>
+        	<img src="gallery/gall28.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall29.jpg" data-gallery>
+        	<img src="gallery/gall29.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall30.jpg" data-gallery>
+        	<img src="gallery/gall30.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall31.jpg" data-gallery>
+        	<img src="gallery/gall31.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall32.jpg" data-gallery>
+        	<img src="gallery/gall32.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall33.jpg" data-gallery>
+        	<img src="gallery/gall33.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall34.jpg" data-gallery>
+        	<img src="gallery/gall34.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall35.jpg" data-gallery>
+        	<img src="gallery/gall35.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall36.jpg" data-gallery>
+        	<img src="gallery/gall36.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall37.jpg" data-gallery>
+        	<img src="gallery/gall37.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall38.jpg" data-gallery>
+        	<img src="gallery/gall38.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall39.jpg" data-gallery>
+        	<img src="gallery/gall39.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall40.jpg" data-gallery>
+        	<img src="gallery/gall40.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall41.jpg" data-gallery>
+        	<img src="gallery/gall41.thumbnail.jpg">
+    	</a>
+		</div>
+
+			<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+			</div>
+
+
+				
+
+
+		</div>
+
+
+
+		<div class="gap gap-40" style="background-image:url(images/section_5.jpg);background-attachment:fixed;">
+
+			<div class = "section-text">
+				Rsvp
+			</div>
+		</div>
+		<div class="content" id="rsvp_img">
+
+<!-- calendar icon -->
+
+
 
 
 		<div class="content" id="done">
@@ -443,6 +732,8 @@ p {
 
 			Airplane designed by <a href="http://www.thenounproject.com/misirlou">misirlou</a>,
 			Coffee designed by <a href="http://www.thenounproject.com/jacob">Jacob Halton</a>
+
+			Present designed by <a href="http://www.thenounproject.com/lorenzo.fernandez">Lorenzo Fernandez</a>
 		</div>
 
 <!-- 
@@ -504,6 +795,11 @@ skrollr.menu.init(s, {
 	});
 
 	</script>
-</body>
 
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+<script src="javascript/bootstrap-image-gallery.min.js"></script>
+</body>
 </html>
