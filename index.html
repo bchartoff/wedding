@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+	<link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="icon" type="image/png" href="favicon.png" />
+	<link rel="stylesheet" type="text/css" href="css/parallax.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<title>Natalie & Ben's Wedding</title>
+	<meta charset="utf-8">
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600italic,600,700italic,700,800italic,800" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine" />
+	<link href="//fonts.googleapis.com/css?family=Open+Sans Condensed:300italic,300,700" rel="stylesheet" type="text/css">
+
+
+
+<style>
+.header-image {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left:0;
+}
+#header-photo{
+  background: url(images/top_image2.jpg) no-repeat top center fixed;
+  z-index: 2;
+}
+#header-overlay{
+  content: url(images/overlay_blue.png) no-repeat top center fixed;
+  z-index: 3;
+}
+
+#topImage{
+	width: 100%;
+}
+#bgImage{
+/*	position: fixed;
+	left: 0;
+	top:0;*/
+	z-index:1;
+	height: 800px;
+}
+#header-names{
+	position: absolute;
+	z-index: 4;
+	color: white;
+	/*font-family: 'Tangerine', sans-serif;*/
+	text-shadow: 2px 2px rgba(0,0,0,.9);
+
+}
+
+.inner-icon{
+	fill: #FAE462;
+}
+
+#header-names a{
+	padding-top: 20px;
+	padding-right: 60px;
+}
+.header-text
+{
+	position: absolute;
+	z-index: 4;
+	color: white;
+	font-family: 'Open Sans Condensed', sans-serif;
+	/*font-weight: 6;*/
+	text-shadow: 2px 2px rgba(0,0,0,.9);
+	text-decoration: none;
+}
+
+
+
+
+.section-text{
+	top: 40px;
+	position: relative;
+	z-index: 4;
+	color: white;
+	/*font-family: 'Tangerine', sans-serif;*/
+/*	font-weight: bold;
+*/	text-shadow: 2px 2px rgba(0,0,0,.9);
+	z-index: 1 !important;
+	text-align: center;
+	width:100%;
+	font-size: 12em;
+}
+
+.header-text a{
+	text-decoration: none;
+	color: white;
+}
+
+.header-text a:active{
+	color: white;
+}
+
+.header-text a:hover{
+	color: #FAE462;
+	text-decoration: none;
+}
+
+.header-nav{
+	float:left;
+	margin-right: 15px;
+	width:auto;
+}
+
+#nav-wrapper{
+	width: 420px;
+	/*margin-right: -40px;*/
+	display: inline-block !important;
+}
+
+.header-icon{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#travel-icon{
+	top: 10%;
+}
+
+
+#lodging_map{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: 30px;
+}
+
+.icon-fill{
+}
+
+p {
+	font-family: 'Open Sans';
+}
+
+#links{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 870px;
+}
+
+#photos_img{
+	height: 788px
+}
+/*#test{
+	height:20px;
+}*/
+</style>
+</head>
+
+<body>
+	<div class="header-image" id = "header-photo" data-0="background-postion;transform:translate3d(0px, 0%, 0px);" data-500="transform:translate3d(0px, -88%, 0px)">
+		<div class = "header-image" id = "header-overlay" data-0="opacity:0" data-500="opacity:1"></div>
+<!-- 		<div id="bgImage" data-0="top:0;" data--10p-top-top="top:-200px"><img id = "topImage" src="top_image.jpg">
+-->			<div class = "header-text" id ="header-names"
+		data-0="font-size:7em;
+				left: 3%;
+				bottom: 60.2%"
+		data-500="font-size:3em;
+				left: .5%;
+				bottom: -.3%">
+			<a href="#details" data-menu-top="500">Natalie & Ben</a>
+		</div>
+		<div class = "header-text" id ="nav-wrapper"
+	data-300="font-size:1.5em;
+			right: -200%;
+			bottom: 2.8%"
+	data-500="font-size:1.5em;
+			right: -6.6%;
+			bottom: 2.8%">
+			<div class = "header-nav" id = "header-details">
+				<a href="#details" data-menu-top="500">DETAILS</a>
+			</div>
+			<div class = "header-nav" id = "header-travel">
+				<a href="#travel" data-menu-top="1320">TRAVEL</a>
+			</div>
+			<div class = "header-nav" id = "header-registry">
+				<a href="#registry" data-menu-top="2400">REGISTRY</a>
+			</div>
+			<div class = "header-nav" id = "header-photos">
+				<a href="#photos" data-menu-top="2830">PHOTOS</a>
+			</div>
+			<div class = "header-nav" id = "header-rsvp">
+				<a href="#rsvp" data-menu-top="3870">RSVP</a>
+			</div>
+		</div>
+	</div>
+		<!--the +/-80% translation can be adjusted to control the speed difference of the image-->
+
+
+	<div
+		class="parallax-image-wrapper parallax-image-wrapper-40"
+		data-anchor-target="#dragons + .gap"
+		data-bottom-top="transform:translate3d(0px, 350%, 0px)"
+		data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+
+		<div
+			class="parallax-image parallax-image-40"
+			style="background-image:url(images/section_1.jpg)"
+			data-anchor-target="#dragons + .gap"
+			data-bottom-top="transform: translate3d(0px, -60%, 0px);"
+			data-top-bottom="transform: translate3d(0px, 60%, 0px);"
+		>
+		</div>
+	</div>
+
+
+	<div
+		class="parallax-image-wrapper parallax-image-wrapper-40"
+		data-anchor-target="#bacons + .gap"
+		data-bottom-top="transform:translate3d(0px, 350%, 0px)"
+		data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+		<div
+			class="parallax-image parallax-image-40"
+			style="background-image:url(images/section_2.jpg)"
+			data-anchor-target="#bacons + .gap"
+			data-bottom-top="transform: translate3d(0px, -60%, 0px);"
+			data-top-bottom="transform: translate3d(0px, 60%, 0px);"
+		></div>
+	</div>
+
+	<div
+		class="parallax-image-wrapper parallax-image-wrapper-40"
+		data-anchor-target="#kittens + .gap"
+		data-bottom-top="transform:translate3d(0px, 350%, 0px)"
+		data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+		<div
+			class="parallax-image parallax-image-40"
+			style="background-image:url(images/section_3.jpg)"
+			data-anchor-target="#kittens + .gap"
+			data-bottom-top="transform: translate3d(0px, -60%, 0px);"
+			data-top-bottom="transform: translate3d(0px, 60%, 0px);"
+		></div>
+	</div>
+
+		<div
+		class="parallax-image-wrapper parallax-image-wrapper-40"
+		data-anchor-target="#stuff + .gap"
+		data-bottom-top="transform:translate3d(0px, 350%, 0px)"
+		data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+		<div
+			class="parallax-image parallax-image-40"
+			style="background-image:url(images/section_4.jpg)"
+			data-anchor-target="#stuff + .gap"
+			data-bottom-top="transform: translate3d(0px, -60%, 0px);"
+			data-top-bottom="transform: translate3d(0px, 60%, 0px);"
+		></div>
+	</div>
+
+	<div
+		class="parallax-image-wrapper parallax-image-wrapper-40"
+		data-anchor-target="#photos_img + .gap"
+		data-bottom-top="transform:translate3d(0px, 350%, 0px)"
+		data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+		<div
+			class="parallax-image parallax-image-40"
+			style="background-image:url(images/section_5.jpg)"
+			data-anchor-target="#photos_img + .gap"
+			data-bottom-top="transform: translate3d(0px, -60%, 0px);"
+			data-top-bottom="transform: translate3d(0px, 60%, 0px);"
+		></div>
+	</div>
+
+<!-- 	<div
+		class="parallax-image-wrapper parallax-image-wrapper-40"
+		data-anchor-target="#rsvp_img + .gap"
+		data-bottom-top="transform:translate3d(0px, 350%, 0px)"
+		data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+		<div
+			class="parallax-image parallax-image-40"
+			style="background-image:url(images/section_3.jpg)"
+			data-anchor-target="#rsvp_img + .gap"
+			data-bottom-top="transform: translate3d(0px, -60%, 0px);"
+			data-top-bottom="transform: translate3d(0px, 60%, 0px);"
+		></div>
+	</div>
+ -->
+
+
+
+
+
+
+	<div id="skrollr-body" style = "margin-top:540px;margin-left:10%;margin-right:10%;">
+
+			<div class="content-text col-md-12">
+				<br>
+				<br>
+				<br>
+				Welcome to our wedding website! We are excited to share this important day in our lives with our friends and family. Please check this site for updates as we get closer to the event!
+			</div>
+		<div class="header" id="dragons">
+		</div>
+
+		<div class="gap gap-40" style="background-image:url(images/section_1.jpg);">
+
+			<div class = "section-text">
+				Details
+			</div>
+		</div>
+		<div class="content" id="bacons">
+
+<!-- calendar icon -->
+			<div class="content-row row">
+				<div class="content-icon col-md-2">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px"
+						 height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+						<g id="Layer_1">
+						</g>
+						<g id="Layer_2">
+						<g>
+							<path fill="#00345D" d="M50,4.6c-24.8,0-45,20.2-45,45s20.2,45,45,45c24.798,0,45-20.199,45-45S74.799,4.6,50,4.6z"/>
+							<g>
+								<path class = "icon-fill" data-10p-top-top="fill:rgb(255,255,255);" data-30p-top-top="fill:rgb(250,228,98);" data-50p-top-top="fill:rgb(255,255,255);" d="M61.172,34.712c-1.438,0-2.576-1.138-2.576-2.576v-6.889c0-1.438,1.139-2.576,2.576-2.576
+									s2.576,1.138,2.576,2.576v6.889C63.748,33.574,62.609,34.712,61.172,34.712z"/>
+								<path class = "icon-fill" data-10p-top-top="fill:rgb(255,255,255);" data-30p-top-top="fill:rgb(250,228,98);" data-50p-top-top="fill:rgb(255,255,255);" class = "inner-icon" fill="#FFFFFF" d="M38.767,34.712c-1.438,0-2.576-1.138-2.576-2.576v-6.889c0-1.438,1.139-2.576,2.576-2.576
+									c1.438,0,2.576,1.138,2.576,2.576v6.889C41.343,33.574,40.205,34.712,38.767,34.712z"/>
+								<path class = "icon-fill" data-10p-top-top="fill:rgb(255,255,255);" data-30p-top-top="fill:rgb(250,228,98);" data-50p-top-top="fill:rgb(255,255,255);" class = "inner-icon" fill="#FFFFFF" d="M27.024,33.394c0-3.595,2.936-6.53,6.53-6.53h0.959v5.212c0,2.396,1.916,4.313,4.312,4.313
+									s4.313-1.917,4.313-4.313v-5.212h13.72v5.212c0,2.396,1.916,4.313,4.312,4.313s4.314-1.917,4.314-4.313v-5.212h0.957
+									c3.596,0,6.531,2.935,6.531,6.53v36.665c0,3.594-2.936,6.471-6.531,6.471H49.011h-0.06c-0.061,0-0.12,0-0.18,0
+									c-8.088,0-21.028-2.277-21.747-13.121c0-0.059,0-0.658,0-0.658V33.394L27.024,33.394z M40.563,71.855
+									c-0.358-0.359-1.078-1.736-1.258-1.977c-1.317-2.336-1.797-4.973-1.438-7.908l-6.77,1.916
+									C31.458,67.182,36.37,71.137,40.563,71.855z M30.919,59.873l9.046-2.576c0.659-0.179,1.438,0,1.917,0.48
+									c0.479,0.539,0.659,1.258,0.479,1.916c-1.019,3.236-0.839,5.932,0.359,8.148c1.917,4.312,5.152,4.793,6.29,4.793h17.433
+									c1.439,0,2.576-1.139,2.576-2.576V42.74H30.919V59.873z"/>
+							</g>
+						</g>
+						<rect fill="none" width="100" height="100"/>
+					</g>
+					</svg>
+				</div>
+				<div class="content-text col-md-10">
+				<strong>When?</strong> Saturday, May 30, 2015.
+				</div>
+			</div>
+
+<!-- bbq icon -->
+			<div class="content-row row">
+				<div class="content-icon col-md-2">
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+					<path fill="#14365C" d="M50,4.6c-24.8,0-45,20.2-45,45s20.2,45,45,45c24.798,0,45-20.199,45-45S74.799,4.6,50,4.6z"/>
+					<path class = "icon-fill" data-10p-top-top="fill:rgb(255,255,255);" data-30p-top-top="fill:rgb(250,228,98);" data-50p-top-top="fill:rgb(255,255,255);" d="M62.797,64.44c-4.25,0-7.707,3.457-7.707,7.708c0,4.25,3.457,7.705,7.707,7.705s7.707-3.455,7.707-7.705
+						C70.504,67.897,67.047,64.44,62.797,64.44z M62.797,75.799c-2.014,0-3.65-1.638-3.65-3.65c0-2.014,1.637-3.652,3.65-3.652
+						c2.013,0,3.651,1.639,3.651,3.652C66.448,74.161,64.81,75.799,62.797,75.799z"/>
+					<path class = "icon-fill" data-10p-top-top="fill:rgb(255,255,255);" data-30p-top-top="fill:rgb(250,228,98);" data-50p-top-top="fill:rgb(255,255,255);" d="M48.155,58.879c1.675,0,3.304-0.207,4.862-0.592l2.727,6.212c1.327-1.228,2.976-2.11,4.803-2.516
+						l-2.498-5.694c6.169-3.471,10.346-10.08,10.346-17.648c0-1.121-0.907-2.028-2.029-2.028h-36.42c-1.12,0-2.028,0.908-2.028,2.028
+						c0,7.568,4.177,14.178,10.345,17.648l-8.719,19.874c-0.6,1.367,0.022,2.962,1.39,3.561c0.354,0.157,0.722,0.229,1.085,0.229
+						c1.041,0,2.033-0.604,2.478-1.619l1.539-3.506h16.702c-0.229-0.856-0.352-1.754-0.352-2.682c0-0.943,0.129-1.858,0.366-2.729H38.407
+						l4.884-11.132C44.849,58.672,46.478,58.879,48.155,58.879z M32.099,40.669h6.004c0.625,6.174,3.616,11.374,7.745,13.988
+						C38.674,53.63,33.005,47.879,32.099,40.669z"/>
+					<path class = "icon-fill" data-10p-top-top="fill:rgb(255,255,255);" data-30p-top-top="fill:rgb(250,228,98);" data-50p-top-top="fill:rgb(255,255,255);" d="M35.177,29.677c0.172,0.485,0.4,0.926,0.657,1.33c0.26,0.403,0.549,0.769,0.864,1.103
+						c0.314,0.333,0.65,0.639,1.017,0.904c0.09,0.064,0.207,0.09,0.321,0.06c0.205-0.054,0.328-0.263,0.274-0.468v0
+						c-0.111-0.426-0.228-0.828-0.329-1.226c-0.099-0.396-0.188-0.782-0.248-1.155c-0.126-0.747-0.135-1.433-0.01-2.009
+						c0.124-0.58,0.368-1.08,0.733-1.644c0.362-0.562,0.848-1.164,1.362-1.87c0.509-0.704,1.059-1.529,1.424-2.545
+						c0.18-0.505,0.31-1.054,0.352-1.61c0.047-0.556,0.009-1.115-0.096-1.638c-0.214-1.052-0.68-1.948-1.233-2.703
+						c-0.282-0.377-0.583-0.724-0.911-1.042c-0.325-0.318-0.671-0.61-1.047-0.865c-0.089-0.06-0.204-0.083-0.314-0.054
+						c-0.205,0.055-0.328,0.265-0.273,0.47l0.002,0.004c0.113,0.427,0.238,0.832,0.352,1.23c0.111,0.398,0.22,0.786,0.301,1.165
+						c0.173,0.755,0.262,1.473,0.222,2.094c-0.041,0.625-0.194,1.141-0.465,1.686c-0.269,0.542-0.668,1.121-1.138,1.777
+						c-0.464,0.657-1.004,1.393-1.45,2.306c-0.222,0.455-0.414,0.957-0.539,1.492c-0.124,0.534-0.179,1.099-0.144,1.648
+						C34.891,28.665,35.004,29.193,35.177,29.677z"/>
+					<path class = "icon-fill" data-10p-top-top="fill:rgb(255,255,255);" data-30p-top-top="fill:rgb(250,228,98);" data-50p-top-top="fill:rgb(255,255,255);" d="M45.151,29.677c0.171,0.485,0.4,0.926,0.656,1.33c0.26,0.403,0.549,0.769,0.863,1.103
+						c0.315,0.333,0.652,0.639,1.018,0.904c0.088,0.064,0.207,0.09,0.321,0.06c0.205-0.054,0.329-0.263,0.275-0.468l-0.002,0
+						c-0.109-0.426-0.227-0.828-0.328-1.226c-0.099-0.396-0.188-0.782-0.248-1.155c-0.127-0.747-0.136-1.433-0.01-2.009
+						c0.123-0.58,0.367-1.08,0.732-1.644c0.362-0.562,0.847-1.164,1.361-1.87c0.507-0.704,1.06-1.529,1.424-2.545
+						c0.179-0.505,0.31-1.054,0.352-1.61c0.047-0.556,0.009-1.115-0.096-1.638c-0.216-1.052-0.681-1.948-1.233-2.703
+						c-0.283-0.377-0.584-0.724-0.911-1.042c-0.327-0.318-0.67-0.61-1.047-0.865c-0.088-0.061-0.202-0.084-0.314-0.054
+						c-0.205,0.055-0.326,0.264-0.272,0.47l0.001,0.004c0.113,0.427,0.237,0.832,0.352,1.23c0.111,0.398,0.218,0.786,0.302,1.165
+						c0.171,0.755,0.261,1.473,0.222,2.094c-0.042,0.626-0.194,1.142-0.466,1.686c-0.268,0.543-0.667,1.121-1.137,1.777
+						c-0.465,0.657-1.004,1.393-1.451,2.306c-0.221,0.456-0.414,0.957-0.539,1.492c-0.125,0.534-0.179,1.1-0.145,1.649
+						C44.865,28.665,44.979,29.193,45.151,29.677z"/>
+					<path class = "icon-fill" data-10p-top-top="fill:rgb(255,255,255);" data-30p-top-top="fill:rgb(250,228,98);" data-50p-top-top="fill:rgb(255,255,255);" d="M55.126,29.677c0.171,0.485,0.401,0.927,0.657,1.33c0.258,0.403,0.549,0.769,0.862,1.103
+						c0.315,0.333,0.651,0.639,1.018,0.904c0.09,0.064,0.206,0.09,0.32,0.06c0.206-0.054,0.328-0.263,0.276-0.468l-0.002-0.001
+						c-0.111-0.426-0.228-0.828-0.328-1.225c-0.1-0.396-0.188-0.782-0.249-1.156c-0.125-0.746-0.136-1.433-0.009-2.009
+						c0.123-0.58,0.367-1.081,0.73-1.645c0.364-0.562,0.849-1.164,1.363-1.87c0.508-0.704,1.058-1.529,1.423-2.545
+						c0.18-0.505,0.311-1.054,0.353-1.611c0.046-0.556,0.009-1.115-0.098-1.638c-0.213-1.053-0.679-1.949-1.232-2.704
+						c-0.282-0.377-0.584-0.724-0.91-1.042c-0.327-0.318-0.671-0.61-1.049-0.865c-0.088-0.06-0.202-0.083-0.314-0.053
+						c-0.203,0.055-0.326,0.264-0.271,0.47v0.004c0.114,0.427,0.237,0.832,0.352,1.23c0.112,0.398,0.22,0.786,0.301,1.165
+						c0.174,0.755,0.263,1.473,0.224,2.094c-0.043,0.625-0.195,1.142-0.466,1.686c-0.268,0.542-0.668,1.12-1.139,1.777
+						c-0.466,0.657-1.004,1.393-1.45,2.306c-0.223,0.455-0.413,0.957-0.538,1.492c-0.124,0.534-0.179,1.1-0.145,1.649
+						S54.953,29.193,55.126,29.677z"/>
+					</svg>
+				</div>
+				<div class="content-text col-md-10"><strong>What?</strong> Besides the ceremony and reception on Saturday, we hope you can join us for a welcome dinner for all guests in town on Friday evening, and a casual brunch on Sunday morning.</div>
+			</div>
+<!-- map icon -->
+			<div class="content-row row">
+				<div class="content-icon col-md-2">
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+					<path fill="#14365C" d="M50.24,4.6c-24.8,0-45,20.2-45,45s20.2,45,45,45c24.799,0,45-20.199,45-45S75.039,4.6,50.24,4.6z"/>
+					<path class = "icon-fill" data-10p-top-top="fill:rgb(255,255,255);" data-30p-top-top="fill:rgb(250,228,98);" data-50p-top-top="fill:rgb(255,255,255);" d="M59.723,34.66c-2.604,0-4.713-2.11-4.713-4.713c0-2.604,2.109-4.713,4.713-4.713
+						c2.603,0,4.713,2.109,4.713,4.713S62.325,34.66,59.723,34.66 M59.723,47.154c0,0,9.792-12.217,9.792-17.625
+						s-4.384-9.792-9.792-9.792s-9.792,4.384-9.792,9.792C49.93,34.938,59.723,47.154,59.723,47.154 M36.938,70.727l-10.181-4.195V37.375
+						l10.181,4.192V70.727z M75.292,70.119V33.24l-3.685-1.961c-0.28,1.04-0.725,2.169-1.277,3.336l1.392,1.017v29.155l-10.181-4.189
+						V47.381c-0.364,0.474-0.635,0.813-0.769,0.979l-1.05,1.311l-1.05-1.311c-0.125-0.156-0.372-0.464-0.7-0.89v14.591l-17.466,7.195
+						V40.1l9.224-3.166c-0.581-1.116-1.087-2.214-1.468-3.256l-11.324,4.028l-13.751-5.66v36.878l13.751,5.664l24.603-10.133v0.002
+						L75.292,70.119z"/>
+					</svg>
+				</div>
+				<div class="content-text col-md-10"><strong>Where?</strong> All wedding events will take place at <a href = "http://www.shenandoahwoods.com/">Shenandoah Woods</a>, outside of Luray, VA.</div>
+			</div>
+
+
+
+		</div>
+
+
+
+
+
+		<div class="gap gap-40" style="background-image:url(images/section_2.jpg);">
+			<div class = "section-text">
+					Travel
+			</div>
+		</div>
+		<div class="content" id="kittens">
+
+<!-- plane icon -->
+			<div class="content-row row">
+
+
+				<div class="content-icon col-md-2">
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+					<path fill="#14365C" d="M50.24,4.6c-24.8,0-45,20.2-45,45s20.2,45,45,45c24.799,0,45-20.199,45-45S75.039,4.6,50.24,4.6z"/>
+					<path class = "icon-fill" data-10p-top-top="fill:rgb(255,255,255);" data-30p-top-top="fill:rgb(250,228,98);" data-50p-top-top="fill:rgb(255,255,255);" d="M32.732,21.956l-4.589,2.152l20.398,20.159l-15.494,8.239l-8.862-4.741l-3.167,1.509l7.408,7.96
+						l1.812,10.699l3.166-1.509l1.692-9.771l16.263-6.683l3.418,28.038l4.59-2.151l5.427-31.789c3.062-1.391,7.487-3.537,10.521-4.983
+						c3.789-1.806,4.739-4.05,3.819-5.911c-0.92-1.861-3.359-2.633-7.147-0.827c-3.035,1.447-7.434,3.647-10.441,5.15L33.42,21.592"/>
+					</svg>
+				</div>
+				<div class="content-text col-md-10"><strong>Arriving</strong> Shenandoah Woods is around a two hour drive from both <a href = "https://www.google.com/maps/dir/Ronald+Reagan+Washington+National+Airport,+Arlington,+VA+22202/The+Pavilion+at+Shenandoah+Woods,+181+Log+Cabin+Dr,+Stanley,+VA+22851/@38.860127,-78.3129267,9z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x89b7b731402fe095:0x4168af016d076bad!2m2!1d-77.040231!2d38.851242!1m5!1m1!1s0x89b44ff57d60cf43:0x2f3b4eed9159edf1!2m2!1d-78.455729!2d38.582618">Reagan National Airport (DCA)</a> and <a href = "https://www.google.com/maps/dir/Dulles+International+Airport,+1+Saarinen+Cir,+Dulles,+VA+20166/The+Pavilion+at+Shenandoah+Woods,+181+Log+Cabin+Dr,+Stanley,+VA+22851/@38.8605624,-78.2320177,10z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x89b64740174eb057:0x8e01cb201080601d!2m2!1d-77.456539!2d38.953116!1m5!1m1!1s0x89b44ff57d60cf43:0x2f3b4eed9159edf1!2m2!1d-78.455729!2d38.582618">Dulles Airport (IAD)</a> near Washington, DC. A Google Doc to help coordinate ride shares is coming soon.</div>
+			</div>
+
+<!-- bed icon -->
+			<div class="content-row row">
+				<div class="content-icon col-md-2">
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+					<path fill="#14365C" d="M50,4.6c-24.8,0-45,20.2-45,45s20.2,45,45,45c24.799,0,45-20.199,45-45S74.799,4.6,50,4.6z"/>
+					<g>
+						<path class = "icon-fill" data-10p-top-top="fill:rgb(255,255,255);" data-30p-top-top="fill:rgb(250,228,98);" data-50p-top-top="fill:rgb(255,255,255);" d="M77.166,59.173v9.757h5.15V54.342H24.712V33.238c0-1.411-1.132-2.567-2.561-2.567l0,0
+							c-1.412,0-2.551,1.156-2.551,2.567V68.93h5.112v-9.757H77.166z"/>
+						<path class = "icon-fill" data-10p-top-top="fill:rgb(255,255,255);" data-30p-top-top="fill:rgb(250,228,98);" data-50p-top-top="fill:rgb(255,255,255);" d="M32.576,43.525c2.56,0,4.628-2.069,4.628-4.638c0-2.551-2.069-4.62-4.628-4.62
+							c-2.561,0-4.631,2.069-4.631,4.62C27.944,41.454,30.015,43.525,32.576,43.525z"/>
+						<path class = "icon-fill" data-10p-top-top="fill:rgb(255,255,255);" data-30p-top-top="fill:rgb(250,228,98);" data-50p-top-top="fill:rgb(255,255,255);" d="M82.398,50.505l-0.016-6.371c-0.016-2.022-1.717-3.417-3.689-3.658L42.324,36.85
+							c-0.073-0.016-0.137-0.049-0.201-0.049c-1.259,0-2.279,1.027-2.279,2.279v6.868h-9.508c-1.275,0-2.295,1.027-2.295,2.279
+							c0,1.268,1.02,2.279,2.295,2.279H82.398z"/>
+					</g>
+					</svg>
+				</div>
+				<div class="content-text col-md-10"><strong>Lodging</strong> There are a number of cabins, bed and breakfasts, and other lodging options in the Luray area. Click on the markers on the map below for more information on each location (please <a href="mailto:almchartoff@gmail.com?Subject=Wedding%20Lodging%Map" target="_top">let us know</a> if a lodging option becomes fully booked and we can remove it from the map). A list of all lodging options can be found <a href = "https://docs.google.com/spreadsheets/d/1TAZqh4f6E-UCCVCOoTb32wNkVecr3NtMAQ-3edPkfvA/edit?usp=sharing">here</a>.
+				<br><br>
+				If you are interested in sharing a large group cabin with other guests, we encourage you to coordinate booking on the Shenandoah Woods properties <a href = "https://docs.google.com/spreadsheets/d/1txchhF_ZPKVsYi0ztSRZ-dcKBxYgnwwsBB0S-Fe7bd8/edit#gid=0">here</a>.
+					<iframe id = "lodging_map" src="https://mapsengine.google.com/map/u/0/embed?mid=ze0H8yf9-ktQ.kY_qp476ywQk" width="640" height="480"></iframe>
+
+				</div>
+		</div>
+		</div>
+		
+		
+
+		<div class="gap gap-40" style="background-image:url(images/section_3.jpg);background-attachment:fixed;">
+
+			<div class = "section-text">
+				Registry
+			</div>
+		</div>
+		<div class="content" id="stuff">
+
+<!-- gift icon -->
+			<div class="content-row row">
+				<div class="content-icon col-md-2">
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<path fill="#14365C" d="M50,4.6c-24.8,0-45,20.2-45,45s20.2,45,45,45c24.798,0,45-20.199,45-45C95,24.799,74.799,4.6,50,4.6z"/>
+<rect fill="none" width="100" height="100"/>
+<g id="Your_Icon">
+	<path class = "icon-fill" data-10p-top-top="fill:rgb(255,255,255);" data-30p-top-top="fill:rgb(250,228,98);" data-50p-top-top="fill:rgb(255,255,255);" d="M68.883,31.297c0.827-1.995,1.572-6.012-2.906-10.491c-2.355-2.355-4.839-3.55-7.406-3.55
+		c-2.814,0-5.298,1.452-7.25,3.975l-1.121-0.648c-0.324-0.188-0.85-0.188-1.174,0l-1.121,0.648
+		c-1.952-2.522-4.441-3.975-7.254-3.975c-2.567,0-5.062,1.194-7.419,3.55c-4.478,4.479-3.76,8.496-2.933,10.491
+		c0.012,0.027,0.129,0.052,0.141,0.078l-7.401,4.299c-0.323,0.189-0.636,0.646-0.636,1.02v28.332c0,0.374,0.313,0.831,0.637,1.019
+		l25.968,15.091c0.323,0.188,0.861,0.188,1.183,0L76.19,66.045c0.324-0.188,0.644-0.645,0.644-1.019v-29.01l-7.987-4.641
+		C68.857,31.349,68.873,31.324,68.883,31.297z M49.617,49.44l-7.897-4.559l7.897-4.56l7.898,4.56L49.617,49.44z M52.707,32.276
+		c0.291-1.83,0.73-3.452,1.279-4.812l3.529,2.036L52.707,32.276z M46.526,32.275L41.72,29.5l3.527-2.037
+		C45.795,28.824,46.237,30.446,46.526,32.275z M41.196,38.922l-4.899,2.828l-7.898-4.561l4.329-2.5
+		C34.747,36.581,37.666,38.037,41.196,38.922z M47.626,52.962v22.645l-7.965-4.56V48.403L47.626,52.962z M51.608,52.964l7.966-4.561
+		v22.645l-7.966,4.559V52.964z M62.938,41.751l-4.901-2.829c3.531-0.885,6.45-2.341,8.469-4.232l4.331,2.5L62.938,41.751z
+		 M58.583,22.68c1.063,0,2.301,0.678,3.583,1.961c1.453,1.453,2.091,2.78,1.921,3.957l-8.005-4.621
+		C56.881,23.134,57.741,22.68,58.583,22.68z M37.067,24.641c1.284-1.284,2.523-1.962,3.584-1.962c0.843,0,1.701,0.455,2.501,1.297
+		l-8.006,4.622C34.977,27.421,35.614,26.094,37.067,24.641z M26.384,40.713l7.966,4.56v22.644l-7.966-4.562V40.713z M64.886,67.917
+		V45.273l7.965-4.561v22.643L64.886,67.917z"/>
+</g>
+</svg>
+				</div>
+				<div class="content-text col-md-10">
+				<strong>Gifts:</strong> We have registered for gifts through <a href = "http://www.macys.com/registry/wedding/guest/?registryId=2222550">Macy's</a>, <a href = "http://www.surlatable.com/registry/giftRegistryList.jsp?id=2001124271646">Sur La Table</a>, and <a href = "http://www.amazon.com/gp/registry/wedding/795MRE9LG3MN">Amazon.com</a>. In addition, we have listed non-traditional gift options at <a href = "http://www.honeyfund.com/wedding/almchartoff">HoneyFund</a>. Or please consider donating to one of our favorite charities in our honor &mdash; <a href = "https://www.poverty-action.org/donation_form">Innovations for Poverty Action</a> or <a href = "http://www.care.org/donate">CARE</a>.
+				</div>
+			</div>
+
+
+				
+
+
+		</div>
+
+
+
+
+		<div class="gap gap-40" style="background-image:url(images/section_4.jpg);background-attachment:fixed;">
+
+			<div class = "section-text">
+				Photos
+			</div>
+		</div>
+		<div class="content" id="photos_img">
+
+			<div class="content-row row">
+		<div id="links">
+    	<a href="gallery/gall1.jpg" data-gallery>
+        	<img src="gallery/gall1.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall2.jpg" data-gallery>
+        	<img src="gallery/gall2.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall3.jpg" data-gallery>
+        	<img src="gallery/gall3.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall4.jpg" data-gallery>
+        	<img src="gallery/gall4.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall5.jpg" data-gallery>
+        	<img src="gallery/gall5.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall6.jpg" data-gallery>
+        	<img src="gallery/gall6.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall7.jpg" data-gallery>
+        	<img src="gallery/gall7.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall8.jpg" data-gallery>
+        	<img src="gallery/gall8.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall9.jpg" data-gallery>
+        	<img src="gallery/gall9.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall10.jpg" data-gallery>
+        	<img src="gallery/gall10.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall11.jpg" data-gallery>
+        	<img src="gallery/gall11.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall12.jpg" data-gallery>
+        	<img src="gallery/gall12.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall13.jpg" data-gallery>
+        	<img src="gallery/gall13.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall14.jpg" data-gallery>
+        	<img src="gallery/gall14.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall15.jpg" data-gallery>
+        	<img src="gallery/gall15.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall16.jpg" data-gallery>
+        	<img src="gallery/gall16.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall17.jpg" data-gallery>
+        	<img src="gallery/gall17.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall18.jpg" data-gallery>
+        	<img src="gallery/gall18.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall19.jpg" data-gallery>
+        	<img src="gallery/gall19.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall20.jpg" data-gallery>
+        	<img src="gallery/gall20.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall21.jpg" data-gallery>
+        	<img src="gallery/gall21.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall22.jpg" data-gallery>
+        	<img src="gallery/gall22.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall23.jpg" data-gallery>
+        	<img src="gallery/gall23.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall24.jpg" data-gallery>
+        	<img src="gallery/gall24.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall25.jpg" data-gallery>
+        	<img src="gallery/gall25.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall26.jpg" data-gallery>
+        	<img src="gallery/gall26.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall27.jpg" data-gallery>
+        	<img src="gallery/gall27.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall28.jpg" data-gallery>
+        	<img src="gallery/gall28.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall29.jpg" data-gallery>
+        	<img src="gallery/gall29.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall30.jpg" data-gallery>
+        	<img src="gallery/gall30.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall31.jpg" data-gallery>
+        	<img src="gallery/gall31.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall32.jpg" data-gallery>
+        	<img src="gallery/gall32.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall33.jpg" data-gallery>
+        	<img src="gallery/gall33.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall34.jpg" data-gallery>
+        	<img src="gallery/gall34.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall35.jpg" data-gallery>
+        	<img src="gallery/gall35.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall36.jpg" data-gallery>
+        	<img src="gallery/gall36.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall37.jpg" data-gallery>
+        	<img src="gallery/gall37.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall38.jpg" data-gallery>
+        	<img src="gallery/gall38.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall39.jpg" data-gallery>
+        	<img src="gallery/gall39.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall40.jpg" data-gallery>
+        	<img src="gallery/gall40.thumbnail.jpg">
+    	</a>
+    	<a href="gallery/gall41.jpg" data-gallery>
+        	<img src="gallery/gall41.thumbnail.jpg">
+    	</a>
+		</div>
+
+			<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+			</div>
+
+
+				
+
+
+		</div>
+
+
+
+		<div class="gap gap-40" style="background-image:url(images/section_5.jpg);background-attachment:fixed;">
+
+			<div class = "section-text">
+				Rsvp
+			</div>
+		</div>
+					<div class="content-text col-md-12">
+						<br><br>
+			Formal invitations will be sent out in the coming months, but if you're ready to RSVP early, go ahead below!
+			</div>
+		<div class="content" id="rsvp_img">
+
+<!-- calendar icon -->
+
+
+
+
+		<div class="content" id="done">
+		<iframe class = "rsvp-form" src="https://docs.google.com/forms/d/1xyYK-8QZf7lPbEYuedRDAmJ-269lQahrbEYlFcNe1HI/viewform?embedded=true" width="760" height="1100" frameborder="0" marginheight="0" marginwidth="0" scrolling="no">Loading...</iframe>
+
+
+		</div>
+
+		<div class = "sources">
+			All icons from or modified from the <a href="http://www.thenounproject.com">Noun Project:</a>
+			Airplane designed by <a href="http://www.thenounproject.com/sesisesi">Ema Dimitrova</a>,
+
+			Travel designed by <a href="http://www.thenounproject.com/tomwalshdesign">Tom Walsh</a>,
+
+			Calendar designed by <a href="http://www.thenounproject.com/parasamuralikrishna">Murali Krishna</a>,
+
+			Grill designed by <a href="http://www.thenounproject.com/AaronDodson">Aaron Dodson</a>,
+
+			Empanada designed by <a href="http://www.thenounproject.com/semilla.solar.10">Semilla Solar</a>,
+
+			Map designed by <a href="http://www.thenounproject.com/josemoya">Jose Moya</a>,
+
+			Airplane designed by <a href="http://www.thenounproject.com/misirlou">misirlou</a>,
+			Coffee designed by <a href="http://www.thenounproject.com/jacob">Jacob Halton</a>
+
+			Present designed by <a href="http://www.thenounproject.com/lorenzo.fernandez">Lorenzo Fernandez</a>
+		</div>
+
+<!-- 
+<iframe width='40%' height='250px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/almchartoff.j778b7ge/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiYWxtY2hhcnRvZmYiLCJhIjoidFFBSW51NCJ9.byPI1dunGhmKCoGPXELDmg'></iframe>
+
+			<p>Pork loin tail pork belly shank ham. Kielbasa venison ham, short loin ham hock beef ribs tri-tip ball tip pork belly. Ribeye sirloin sausage tenderloin hamburger. Strip steak tongue turkey, andouille bacon beef ribs venison. T-bone ball tip bresaola fatback, ground round meatball chicken sausage tongue pork chop leberkas sirloin jerky shank bacon. Turducken sirloin cow shankle pig, leberkas venison boudin pastrami.</p>
+
+		<p>Cow fatback short loin, hamburger speck jowl turducken capicola ham hock. Hamburger corned beef strip steak shank filet mignon, jerky capicola chicken jowl ribeye pork ham hock ground round bresaola. Jowl ribeye kielbasa drumstick pork belly leberkas. Spare ribs fatback shankle, hamburger meatloaf sausage pork loin andouille pork kielbasa. Pancetta shank tongue, leberkas turducken shoulder rump meatball pork belly pig hamburger brisket biltong. Tenderloin short ribs pig, rump tail chuck turducken.</p>
+
+		<p>Cow tri-tip pork loin salami corned beef. T-bone turkey ham frankfurter, brisket cow chicken bacon rump sirloin. Pancetta ribeye salami leberkas speck shank. Ribeye prosciutto swine venison speck beef.</p>
+
+			<p>Pork loin tail pork belly shank ham. Kielbasa venison ham, short loin ham hock beef ribs tri-tip ball tip pork belly. Ribeye sirloin sausage tenderloin hamburger. Strip steak tongue turkey, andouille bacon beef ribs venison. T-bone ball tip bresaola fatback, ground round meatball chicken sausage tongue pork chop leberkas sirloin jerky shank bacon. Turducken sirloin cow shankle pig, leberkas venison boudin pastrami.</p>
+
+		<p>Cow fatback short loin, hamburger speck jowl turducken capicola ham hock. Hamburger corned beef strip steak shank filet mignon, jerky capicola chicken jowl ribeye pork ham hock ground round bresaola. Jowl ribeye kielbasa drumstick pork belly leberkas. Spare ribs fatback shankle, hamburger meatloaf sausage pork loin andouille pork kielbasa. Pancetta shank tongue, leberkas turducken shoulder rump meatball pork belly pig hamburger brisket biltong. Tenderloin short ribs pig, rump tail chuck turducken.</p>
+
+		<p>Cow tri-tip pork loin salami corned beef. T-bone turkey ham frankfurter, brisket cow chicken bacon rump sirloin. Pancetta ribeye salami leberkas speck shank. Ribeye prosciutto swine venison speck beef.</p>
+
+ -->
+	</div>
+
+	<script type="text/javascript" src="javascript/skrollr.min.js"></script>
+
+	<script type="text/javascript" src="javascript/skrollr.menu.min.js"></script>
+
+	<script type="text/javascript">
+	setTimeout(function() {
+		var s = skrollr.init({
+			smoothScrolling: false,
+			mobileDeceleration: 0.004,
+			edgeStrategy: 'ease'
+			});
+
+//The options (second parameter) are all optional. The values shown are the default values.
+skrollr.menu.init(s, {
+    //skrollr will smoothly animate to the new position using `animateTo`.
+    animate: true,
+
+    //The easing function to use.
+    // easing: 'linear',
+
+    //Multiply your data-[offset] values so they match those set in skrollr.init
+    //scale: 2,
+
+    //How long the animation should take in ms.
+    duration: function(currentTop, targetTop) {
+        //By default, the duration is hardcoded at 500ms.
+        return 500;
+
+        //But you could calculate a value based on the current scroll position (`currentTop`) and the target scroll position (`targetTop`).
+        //return Math.abs(currentTop - targetTop) * 10;
+    },
+
+    //If you pass a handleLink function you'll disable `data-menu-top` and `data-menu-offset`.
+    //You are in control where skrollr will scroll to. You get the clicked link as a parameter and are expected to return a number.
+    // handleLink: function(link) {
+    //     return 400;//Hardcoding 400 doesn't make much sense.
+    // }
+	});
+	});
+
+	</script>
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+<script src="javascript/bootstrap-image-gallery.min.js"></script>
+</body>
+</html>

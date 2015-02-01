@@ -1,0 +1,28 @@
+@font-face {
+    font-family: laBelleAurore;
+    src: url(../fonts/LaBelleAurore.ttf);
+}
+
+@font-face {
+    font-family: freebooterscript;
+    src: url(../fonts/freebooterscript.ttf);
+}
+
+@font-face {
+    font-family: Cylburn;
+    src: url(../fonts/Cylburn.ttf);
+}
+
+#header-names{
+    font-family: Cylburn;
+}
+
+.section-text{
+    font-family: Cylburn;
+}
+
+.content-text{
+	font-family: Open Sans;
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
