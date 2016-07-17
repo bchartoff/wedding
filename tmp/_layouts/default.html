@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+  <body>
+
+    <img class = "bg" id = "bg2" src = "/lima-y-sal/assets/bg_yellow.png">
+    <img class = "bg" id = "bg1" src = "/lima-y-sal/assets/bg_purple.png">
+
+    {% include header.html %}
+
+    <div class="page-content" id = "default-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+
+    </div>
+
+
+    <!-- {% include footer.html %} -->
+  <script src = "/lima-y-sal/assets/js/vendor/d3.v3.min.js"></script>
+  <script src = "/lima-y-sal/assets/js/vendor/jquery-1.12.4.min.js"></script>
+  {% if page.id %}
+    <script>
+      $( document ).ready(function() {
+        window.scrollTo(0,window.innerWidth);
+      });
+    </script>
+  {% else %}
+    
+  {% endif %}
+  <script src = "/lima-y-sal/assets/js/main.js"></script>
+
+  </body>
+
+</html>

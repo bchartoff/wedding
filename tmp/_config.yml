@@ -1,0 +1,19 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Lima y Sal
+email: bchartoff@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+    Stories and pictures about food, life, adventures, food, drinks and food in Lima, Peru.
+baseurl: "/lima-y-sal" # the subpath of your site, e.g. /blog
+url: "http://bchartoff.github.io/lima-y-sal" # the base hostname & protocol for your site
+twitter_username: benchartoff
+github_username:  bchartoff
+
+# Build settings
+markdown: kramdown
